@@ -11,21 +11,28 @@
             color:blueviolet;
         }
         .grad{
-            position:absolute;
-            left: 50%;
-            transform: translate(-50%);
             width: 500px;
             box-shadow: 0 0 10px black;
             height: 500px;
             background: linear-gradient(45deg,black,rgb(142,67,226),black);
         }
-        .grad:hover{
-            background: linear-gradient(45deg,black,pink,black);
+        #attach{
+            width: 900px;
+            box-shadow: 0 0 10px black;
+            height: 250px;
+            background-image: url("https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cG5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1000&q=60");
+            background-attachment: fixed;
         }
     </style>
 </head>
 <body>
     <lable>gradient</lable>
     <div class="grad"></div>
+    <h2>background_attachment</h2>
+    <div id="attach">
+    </div>
+    <lable>gradient</lable>
+    <div class="grad"></div>
+    
 </body>
 </html>
