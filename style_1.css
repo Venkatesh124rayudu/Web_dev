@@ -1,8 +1,4 @@
-button{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform:translateX(-50%);  
+.container{  
     width:220px;
     font-size: 20px;
     text-align: center;
@@ -20,10 +16,16 @@ button{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }   
 
-button:hover{
-  /*  transform:translateY(-10px);*/
+.container:hover{
+    transform:translateY(-10px);
     background-color: rgb(226, 33, 146) ;
     color: aliceblue;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
+}
+div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
