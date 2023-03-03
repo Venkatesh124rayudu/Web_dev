@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border-radius: 10px;
+        }
+        .box_1{
+            height: 200px;
+            width: 200px;
+            box-shadow: 0 0 10px black;
+            position: relative;
+            top: 200px;
+            left: 200px;
+            z-index: 2;
+            background-color: red;
+            transition: all 1s;
+        }
+        .box_2{
+            height: 200px;
+            width: 200px;
+            box-shadow: 0 0 10px black;
+            position: relative;
+            left: 200px;
+            z-index: 1;
+            transition: all 1s;
+            background-color: black;
+            color: aliceblue;
+        }
+        .box_1:hover{
+
+            transform: translateY(-60px);
+        }
+        .box_2:hover{
+            box-shadow: 0 0 10px black;
+            transform: translateY(120px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box_1"></div>
+    <div class="box_2">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto inventore voluptatibus ab. Ipsum nobis voluptates, deserunt atque autem amet officiis?</p>
+    </div>
+</body>
+</html>
