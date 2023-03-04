@@ -5,44 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div{
-            border-radius: 10px;
-        }
         .box_1{
-            height: 200px;
-            width: 200px;
+            width: 250px;
+            height: 250px;
             box-shadow: 0 0 10px black;
+            margin: auto;
+            margin-top: 220px;
             position: relative;
-            top: 200px;
-            left: 200px;
-            z-index: 2;
-            background-color: red;
-            transition: all 1s;
-        }
-        .box_2{
-            height: 200px;
-            width: 200px;
-            box-shadow: 0 0 10px black;
-            position: relative;
-            left: 200px;
-            z-index: 1;
-            transition: all 1s;
             background-color: black;
-            color: aliceblue;
+            z-index: 1;
+            transition: all 0.5s;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+        .box_1 .box_2 {
+            position: absolute;
+            width: inherit;
+            height: inherit;
+            background-color: red;
+            z-index: 2;
+            box-shadow: 0 0 10px black;
+            transition: all 0.5s;
+            border-radius: 10px;
+            box-sizing: border-box;
+            overflow: hidden;
         }
         .box_1:hover{
-
-            transform: translateY(-160px);
+            transform: translateY(25%);
         }
-        .box_2:hover{
-            box-shadow: 0 0 10px black;
+        .box_1:hover .box_2{
+            transform: translateY(-50%);
+        }
+        .box_1 a{
+            position: absolute;
+            width: inherit;
+            height: inherit;
+            top:60%;
+            text-decoration: none;
+            color:aliceblue;
+            text-align: center;
+            font-family: fantasy;
+            display: inline-block;
+        }
+        .box_1 .box_2 img{
+            position: absolute;
+            width:100px;
+            height:100px;
+            margin-top: 15%;
+            margin-left: 30%;
+            border-radius: 10px;
             
         }
+        .box_1:hover .box_2 img{
+            box-shadow: 0 0 10px black;
+        }
+
     </style>
 </head>
 <body>
-    <div class="box_1"></div>
-    <div class="box_2">
+    <div class="box_1">
+        <a href="https://github.com/Venkatesh124rayudu" target="_blank">Venkatesh_Rayudu</a>
+        <div class="box_2">
+            <img src="https://images.pexels.com/photos/673857/pexels-photo-673857.jpeg?auto=compress&cs=tinysrgb&w=600">
+        </div>
     </div>
 </body>
 </html>
