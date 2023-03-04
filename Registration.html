@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(45deg,black,red,black);
+        }
+        .form-rg{
+            background: linear-gradient(135deg,black,red,black);
+            width: 350px;
+            height: 450px;
+            color: aliceblue;
+            margin: 50px auto;
+            padding: 30px;
+        }
+        .form-rg form label{
+            display: block;
+        }
+        .form-rg h2{
+            text-align: center;
+        }
+        .form-rg form input{
+            border: none;
+            background-color: transparent;
+            font-size:18px;
+            width: 340px;
+            outline: none;
+            border-bottom:2px solid black ;
+            height: 0px;
+            transition: all 0.5s;
+        }
+        .form-rg .inside label{
+            margin-top: 20px;
+        }
+        .me:focus{
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="form-rg">
+        <h2>Register</h2>
+        <form>
+            <div class="inside">
+            <label>User Name</label>
+            <input type="text" class="me">
+            </div>
+            <div class="inside">
+                <label>Email</label>
+                <input type="email" class="me">
+            </div>
+            <div class="inside">
+                <label>Password</label>
+                <input type="password" class="me">
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
