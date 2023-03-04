@@ -1,0 +1,194 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 450px;
+            height: 400px;
+            box-shadow: 0 0 10px black;
+            margin: auto;
+            margin-top: 40px;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .box img{
+            width: inherit;
+            height: inherit;
+            filter: grayscale(100%);
+            border-radius: 10px;
+            transition: all 0.5s;
+        }
+        .box .box1{
+            position: absolute;
+            top: 0;
+            color: aliceblue;
+            width: 50%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            box-sizing: border-box;
+            padding: 10px;
+            transform: perspective(400px) rotateY(90deg);
+            transform-origin: left;
+            transition: all 0.5s;
+        }
+        .box:hover .box1{
+            transform: perspective(400px) rotateY(0deg);
+            
+        }
+        .box:hover img{
+            filter: grayscale(0%);
+            transform: scale(1.1,1.1);
+        }
+        .g{
+            width: 300px;
+            height:450px ;
+            margin: auto;
+            margin-top: 50px;
+            box-shadow: 0 0 10px black;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .g img{
+            width: inherit;
+            height: inherit;
+            border-radius: 20px;
+            transition: all 0.5s;
+            filter: grayscale(100%);
+        }
+        .g:hover img{
+            transform: scale(1.2,1.2);
+            filter: grayscale(0%);
+        }
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: aliceblue;
+        }
+        h2{
+            border-bottom: 2px solid white;
+            text-align: center;
+        }
+        .container{
+            width: 500px;
+            height: 400px;
+            box-shadow: 0 0 10px black;
+            margin: auto;
+            margin-top: 30px;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        .container img{
+            width: inherit;
+            height: inherit;
+            border-radius: 0 10px 10px 0;
+            transform: translateX(50%);
+            transition: all 0.5s;
+        }
+        .container .contain{
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px;
+            box-sizing: border-box;
+            background: linear-gradient(60deg,orange,blue,blueviolet);
+            width: 50%;
+            height: 100%;
+            border-radius: 10px 0 0 10px;
+            transform: translatex(0%);
+            transition: all 0.5s;
+        }
+        .container .contain p{
+            font-size: 20px;
+        }
+        .container:hover img{
+            transform: translateX(0%);
+        }
+        .container:hover .contain{
+            transform: translateX(-100%);
+        }
+        .box_1{
+            width: 250px;
+            height: 250px;
+            box-shadow: 0 0 10px black;
+            margin: auto;
+            margin-top: 220px;
+            position: relative;
+            background-color: black;
+            z-index: 1;
+            transition: all 0.5s;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+        .box_1 .box_2 {
+            position: absolute;
+            width: inherit;
+            height: inherit;
+            background-color: red;
+            z-index: 2;
+            box-shadow: 0 0 10px black;
+            transition: all 0.5s;
+            border-radius: 10px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .box_1:hover{
+            transform: translateY(25%);
+        }
+        .box_1:hover .box_2{
+            transform: translateY(-50%);
+        }
+        .box_1 a{
+            position: absolute;
+            width: inherit;
+            height: inherit;
+            top:60%;
+            text-decoration: none;
+            color:aliceblue;
+            text-align: center;
+            font-family: fantasy;
+            display: inline-block;
+        }
+        .box_1 .box_2 img{
+            position: absolute;
+            width:100px;
+            height:100px;
+            margin-top: 15%;
+            margin-left: 30%;
+            border-radius: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="https://images.pexels.com/photos/673857/pexels-photo-673857.jpeg?auto=compress&cs=tinysrgb&w=600" alt="photo">
+        <div class="box1">
+            <h2>Photo</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquid doloribus sit. Eveniet accusantium beatae perferendis asperiores ducimus voluptate, ex, soluta ad autem aut modi id repudiandae ut mollitia earum?</p>
+        </div>
+    </div>
+    <div class="g">
+        <img src="https://images.pexels.com/photos/673857/pexels-photo-673857.jpeg?auto=compress&cs=tinysrgb&w=600" alt="photo">
+    </div>
+    <div class="container">
+        <img src="https://images.pexels.com/photos/3293148/pexels-photo-3293148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="photo"> 
+        <div class="contain">
+            <h2>Nature Lover</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+                . Quia, nulla facere? Illum fuga impedit con
+                sequuntur similique porro minima accusantium facere eum corporis expe
+                dita dolorum, excepturi nobis et placeat sequi cum.</p>
+        </div>
+    </div>
+    <div class="box_1">
+        <a href="https://github.com/Venkatesh124rayudu" target="_blank">Venkatesh_Rayudu</a>
+        <div class="box_2">
+            <img src="https://images.pexels.com/photos/673857/pexels-photo-673857.jpeg?auto=compress&cs=tinysrgb&w=600">
+        </div>
+    </div>
+    
+</body>
