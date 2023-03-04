@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 450px;
+            height: 400px;
+            box-shadow: 0 0 10px black;
+            margin: auto;
+            margin-top: 40px;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .box img{
+            width: inherit;
+            height: inherit;
+            filter: grayscale(100%);
+            border-radius: 10px;
+            transition: all 0.5s;
+        }
+        .box .box1{
+            position: absolute;
+            top: 0;
+            color: aliceblue;
+            width: 50%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            box-sizing: border-box;
+            padding: 10px;
+            transform: perspective(400px) rotateY(90deg);
+            transform-origin: left;
+            transition: all 0.5s;
+        }
+        .box:hover .box1{
+            transform: perspective(400px) rotateY(0deg);
+            
+        }
+        .box:hover img{
+            filter: grayscale(0%);
+            transform: scale(1.1,1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="https://images.pexels.com/photos/673857/pexels-photo-673857.jpeg?auto=compress&cs=tinysrgb&w=600" alt="photo">
+        <div class="box1">
+            <h2>Photo</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic aliquid doloribus sit. Eveniet accusantium beatae perferendis asperiores ducimus voluptate, ex, soluta ad autem aut modi id repudiandae ut mollitia earum?</p>
+        </div>
+    </div>
+</body>
+</html>
