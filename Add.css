@@ -2,7 +2,7 @@ body{
     background-image:url("https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") ;
     background-position: center;
     background-size:cover;
-    color:rgb(238,106,1);
+    color:rgb(254,254,254);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 form{
@@ -36,7 +36,7 @@ form:hover{
     font-size: 20px;
     width: 400px;
     background-color: transparent;
-    color:rgb(238,106,1);
+    color:rgb(254,254,254);
     outline: none;
 }
 form .form .lable_contorl{
@@ -76,4 +76,7 @@ form .form .lable_contorl{
 }
 form .form .lable_contorl:hover{
     box-shadow: 0 0 10px white;
+}
+option{
+    color:black;
 }
