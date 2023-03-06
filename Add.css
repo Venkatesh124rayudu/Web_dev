@@ -12,10 +12,12 @@ form{
     margin: 90px auto;
     border-radius: 5px;
     background-color: rgba(0,0,0,50%);
-    transition: all 0.5s;
+    transition: 0.5s;
+    /*transform: scale(-100%,-100%);*/
 }
 form:hover{
     box-shadow: 0px 0px 20px white;
+    transform: scale(1.05,1.05);
 }
 .form{
     padding: 50px;
@@ -26,6 +28,10 @@ form:hover{
 }
 .form h1{
     text-align: center;
+    box-shadow: 0 5px 0 white ;
+}
+.from:hover h1{
+    
 }
 
 .form .lable_type label{
