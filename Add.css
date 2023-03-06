@@ -9,7 +9,7 @@ form{
     box-shadow: 0 0 10px black;
     position: relative;
     margin: 90px auto;
-
+    border-radius: 5px;
 }
 .form{
     padding: 50px;
@@ -33,14 +33,14 @@ form{
     color: aliceblue;
     outline: none;
 }
-form .form input{
+form .form .lable_contorl{
     border: none;
     outline: none;
     border-bottom:2px solid black;
     border-radius: 5px;
     box-shadow: 0 0 5px black;
 }
-form .form input:focus{
+form .form .lable_contorl:focus{
     border: none;
     outline: none;
     border-bottom:2px solid white;
