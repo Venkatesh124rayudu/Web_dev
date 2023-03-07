@@ -13,7 +13,7 @@ form{
     border-radius: 25px 0 25px 0;
     background-color: rgba(0,0,0,50%);
     transition: 0.5s;
-    /*transform: scale(-100%,-100%);*/
+    /* transform: scale(-100%,-100%); */
 }
 form:hover{
     box-shadow: 0px 0px 20px white;
@@ -24,7 +24,6 @@ form:hover{
     position: relative;
     display:block;
     font-size: 20px;
-   
 }
 .form h1{
     text-align: center;
