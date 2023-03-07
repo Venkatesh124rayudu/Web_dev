@@ -10,14 +10,14 @@ form{
     box-shadow: 0 0 5px white;
     position: relative;
     margin: 90px auto;
-    border-radius: 5px;
+    border-radius: 25px 0 25px 0;
     background-color: rgba(0,0,0,50%);
     transition: 0.5s;
     /*transform: scale(-100%,-100%);*/
 }
 form:hover{
     box-shadow: 0px 0px 20px white;
-    transform: scale(1.05,1.05);
+    transform: scale(1.04,1.04);
 }
 .form{
     padding: 50px;
@@ -28,10 +28,8 @@ form:hover{
 }
 .form h1{
     text-align: center;
-    box-shadow: 0 5px 0 white ;
-}
-.from:hover h1{
-    
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
 }
 
 .form .lable_type label{
@@ -48,9 +46,10 @@ form:hover{
 form .form .lable_contorl{
     border: none;
     outline: none;
-    border-bottom:2px solid black;
+    border-bottom:2px solid white;
     border-radius: 5px;
     box-shadow: 0 0 5px black;
+    height: 40px;
 }
 /*form .form .lable_contorl:focus{
     border: none;
@@ -72,16 +71,16 @@ form .form .lable_contorl{
     top: 45px;
     transform: translate(-50%,-50%);
     color: aliceblue;
-    background-color:rgb(238,106,1);
+    background-color:transparent;
     font-size: 25px;
     transition: all 0.5s;
 }
 .form #Submit input:hover{
     background-color: aliceblue;
-    color: rgb(238,106,1);
+    color: black;
 }
 form .form .lable_contorl:hover{
-    box-shadow: 0 0 10px white;
+    box-shadow: 0 0 20px white;
 }
 option{
     color:black;
