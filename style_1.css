@@ -17,7 +17,7 @@
 }   
 
 .container:hover{
-    transform:translateX(1040px);
+    transform:translateY(20px);
     background-color: rgb(226, 33, 146) ;
     color: aliceblue;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
